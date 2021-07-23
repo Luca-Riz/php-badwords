@@ -18,14 +18,16 @@ Creare una variabile con un paragrafo di testo a vostra scelta. Stampare a scher
 
 <p>
   <?php 
-    echo "Charlie diceva: " . $para;
+    echo "Charlie diceva: " . $para; //stampo paragrafo
   ?>
 </p>
 <p>
-  <?php 
-    echo "La lunghezza del paragrafo sopra è di " . strlen($para) . " caratteri.";
-  ?>
+  <?php echo "La lunghezza del paragrafo sopra è di " . strlen($para) . " caratteri."; //calcolo lunghezza paragrafo ?>
 </p>
+<p>
+  <?php echo "La parola da censurare è alla posizione " . strpos($para, $_GET["badword"]); //calcolo lunghezza paragrafo ?>
+</p>
+
   
 </body>
 </html>
