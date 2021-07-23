@@ -16,11 +16,16 @@ Creare una variabile con un paragrafo di testo a vostra scelta. Stampare a scher
 </head>
 <body>
 
-<h1>
+<p>
   <?php 
     echo "Charlie diceva: " . $para;
   ?>
-</h1>
+</p>
+<p>
+  <?php 
+    echo "La lunghezza del paragrafo sopra è di " . strlen($para) . " caratteri.";
+  ?>
+</p>
   
 </body>
 </html>
