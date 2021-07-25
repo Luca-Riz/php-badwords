@@ -16,6 +16,8 @@ Creare una variabile con un paragrafo di testo a vostra scelta. Stampare a scher
 </head>
 <body>
 
+<a href="?badword=vista">Add badword "vista"</a>
+
 <p> Charlie diceva: <?php echo $para; //stampo paragrafo ?> </p>
 <p> La lunghezza del paragrafo sopra è di <?php echo strlen($para); //calcolo lunghezza paragrafo ?> caratteri.</p>
 
