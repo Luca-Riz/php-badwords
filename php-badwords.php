@@ -16,33 +16,19 @@ Creare una variabile con un paragrafo di testo a vostra scelta. Stampare a scher
 </head>
 <body>
 
-<p>
-  <?php 
-    echo "Charlie diceva: " . $para; //stampo paragrafo
-  ?>
-</p>
-<p>
-  <?php echo "La lunghezza del paragrafo sopra è di " . strlen($para) . " caratteri."; //calcolo lunghezza paragrafo ?>
-</p>
+<p> Charlie diceva: <?php echo $para; //stampo paragrafo ?> </p>
+<p> La lunghezza del paragrafo sopra è di <?php echo strlen($para); //calcolo lunghezza paragrafo ?> caratteri.</p>
 
 <!-- http://localhost/php-badwords/php-badwords.php/?badword=tragedia -->
 
-<p>
-  <?php echo "La parola da censurare è alla posizione " . strpos($para, $_GET["badword"]); //calcolo la posizione della parola nell'url ?>
-</p>
+<p> La parola da censurare è alla posizione <?php echo strpos($para, $_GET["badword"]); //calcolo la posizione della parola nell'url ?> </p>
 <p>
   <?php 
     $newPara = str_replace($_GET["badword"], '***',$para,);
     echo "La frase censurata di Charlie è: " . $newPara //sostituisco la parola da censurare con ***
   ?>
 </p>
-<p>
-  <?php 
-    echo "La nuova lunghezza del paragrafo censurato è di " . strlen($newPara) . " caratteri."; //calcolo lunghezza nuovo paragrafo 
-  ?>
-</p>
-
-
+<p>La nuova lunghezza del paragrafo censurato è di <?php echo strlen($newPara); //calcolo lunghezza nuovo paragrafo   ?> caratteri.</p>
   
 </body>
 </html>
